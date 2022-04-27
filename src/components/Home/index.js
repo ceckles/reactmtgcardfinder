@@ -45,7 +45,7 @@ const Home =() => {
     <form onSubmit={form.onSubmit((values) => GetCards(values.cardName))}>
           <TextInput
           id="cardName"
-          placeholder="Search for a Magic Card"
+          placeholder="Search for a Magic Card i.e Doom or Pestilence "
           required
           label="Card Name"
           {...form.getInputProps('cardName')}
