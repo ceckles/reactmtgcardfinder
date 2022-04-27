@@ -21,7 +21,7 @@ const Card = ({card}) => {
       <div>
         <p>{card.name}</p>
         <Image
-          src={card.image_uris}
+          src={card.image_uris.png}
         />
       </div>
     }
