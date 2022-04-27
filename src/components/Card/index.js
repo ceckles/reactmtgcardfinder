@@ -2,9 +2,11 @@ import React, {useState} from 'react'
 import { Image,Text, Badge, Button, MantineProvider, Modal } from '@mantine/core';
 import { Link } from "react-router-dom";
 
-const Card = ({card, setDetail}) => {
+const Card = ({card}) => {
   const [opened, setOpened] = useState(false);
-
+  for (let [key, value] of Object.entries(card)) {
+    console.log(key + ':' + value);
+  }
   return (
     <MantineProvider
       theme={{
@@ -15,8 +17,9 @@ const Card = ({card, setDetail}) => {
       }}
     >
     <Modal opened={opened} onClose={() => setOpened(false)} title={card.name}>
-      //Modal Content
-      <p>HELLO WORLD</p>
+    {
+      
+    }
     </Modal>
       {/*<Button color="ocean-blue">Ocean blue button</Button>
     <Badge color="bright-pink" variant="filled">Bright pink badge</Badge>*/}
