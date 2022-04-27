@@ -18,7 +18,7 @@ const Card = ({card}) => {
     >
     <Modal opened={opened} onClose={() => setOpened(false)} title={card.name}>
     {
-      
+      <p>Card Details Here</p>
     }
     </Modal>
       {/*<Button color="ocean-blue">Ocean blue button</Button>
