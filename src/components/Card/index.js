@@ -1,25 +1,56 @@
 import React, {useState} from 'react'
-import { Image,Text, Badge, Button, MantineProvider, Modal } from '@mantine/core';
+import { Image,Text, Badge, Button, MantineProvider, Modal, useMantineTheme } from '@mantine/core';
 import { Link } from "react-router-dom";
+import '../../css/mana-cost.css';
+import {ManaCoast} from '../res/manaCoast';
+import {ConvertMana} from '../res/ConvertManaFunc';
 
 const Card = ({card}) => {
+  const theme = useMantineTheme();
+  const secondaryColor = theme.colorScheme === "dark" ? theme.colors.dark[1] : theme.colors.gray[7];
   const [opened, setOpened] = useState(false);
-  for (let [key, value] of Object.entries(card)) {
-    console.log(key + ':' + value);
-  }
+  // for (let [key, value] of Object.entries(card)) {
+  //   console.log(key + ':' + value);
+  // }
+
+  function ManaCoast(cost){
+    //Mana Format: "{3}{G}"
+    //console.log(mana);
+    let value = cost.replaceAll("{"," ");
+    value = value.replaceAll("}", "");
+    value = value.substring(1);
+    // cost = cost.slice(0,-1);
+    value = value.split(" ");
+    //console.log("MANA COAST:", value);
+    return value
+  };
+  const cost = ManaCoast(card.mana_cost);
+
+  function ReplaceMana(data){
+    //console.log(data);
+    const imgs = data.map((val) =>{
+      //console.log(val);
+      const img = ConvertMana(val);
+      return `mana small ${img} shadow`;
+  })
+  return imgs;
+  };
+  const manaImg = ReplaceMana(cost);
+  console.log(manaImg);
   return (
-    <MantineProvider
-      theme={{
-        colors: {
-          'ocean-blue': ['#7AD1DD', '#5FCCDB', '#44CADC', '#2AC9DE', '#1AC2D9', '#11B7CD', '#09ADC3', '#0E99AC', '#128797', '#147885'],
-          'bright-pink': ['#F0BBDD', '#ED9BCF', '#EC7CC3', '#ED5DB8', '#F13EAF', '#F71FA7', '#FF00A1', '#E00890', '#C50E82', '#AD1374'],
-        },
-      }}
-    >
+    <>
     <Modal opened={opened} onClose={() => setOpened(false)} title={card.name}>
     {
       <div>
         <p>{card.name}</p>
+        <p>coast:{
+          manaImg.map(mana =>{
+            return(
+                  <span class={mana}/>
+            )
+           }
+          )}
+      </p>
         <Image
           src={card.image_uris.png}
         />
@@ -40,7 +71,7 @@ const Card = ({card}) => {
             onClick={() => setOpened(true)}
         />
     </div>
-    </MantineProvider>
+    </>
   )
 }
 

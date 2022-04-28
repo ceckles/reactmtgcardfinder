@@ -1,20 +1,14 @@
-import '../../App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { TextInput, Button, Group, Box, } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import CardList from '../CardList';
 import axios from 'axios';
-
+import {Paper} from '@mantine/core';
 
 const Home =() => {
   //States
   const [cardList, setCardList] = useState([]);
 
-  //Search for Card
-  // const handleSubmit = (e) =>{
-  //   e.preventDefault();
-    
-  // }
     const form = useForm({
       initialValues: {
         cardName: '',
@@ -41,6 +35,7 @@ const Home =() => {
 
   
   return (
+    <div className="App">
     <Box sx={{ maxWidth: 1000 }} mx="auto">
     <form onSubmit={form.onSubmit((values) => GetCards(values.cardName))}>
           <TextInput
@@ -57,9 +52,10 @@ const Home =() => {
     <br/>
      {cardList.length > 0
        ? <CardList cardList={cardList}/>
-       : <div id="cardlist"></div>
+       : <Paper/>
      }
     </Box>
+  </div>
   );
 }
 
