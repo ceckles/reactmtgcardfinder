@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TextInput, Button, Group, Box, } from '@mantine/core';
 import { useForm } from '@mantine/form';
-import CardList from '../CardList';
+import CardList from '../../CardList';
 import axios from 'axios';
 import {Paper} from '@mantine/core';
 

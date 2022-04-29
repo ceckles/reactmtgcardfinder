@@ -1,8 +1,9 @@
 import "./App.css";
-import React from "react";
-import Home from "./components/Home";
-import NotFound from './components/Error/NotFound';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {useState,useEffect} from "react";
+import Home from "./components/pages/Home";
+import Details from "./components/pages/Details";
+import NotFound from './components/pages/Error/NotFound';
+import { BrowserRouter, Routes, Route, useParams} from "react-router-dom";
 import { ColorSchemeProvider, MantineProvider, Paper, Space } from "@mantine/core";
 import { useHotkeys, useLocalStorageValue } from "@mantine/hooks";
 import LightAndDarkModeButton from "./components/LightAndDarkModeButton";
@@ -20,14 +21,15 @@ function App() {
     <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
     <MantineProvider theme={{colorScheme}}>
     <Paper padding="md" radius={0} style={{minHeight:"100vh"}}>
-    <div class="mr-1">
+    <div className="mr-1">
     <Space h="xs" />
     <LightAndDarkModeButton />
     </div>
     <BrowserRouter>
       <Routes>
+        <Route path='/detail/:id' element={<Details />} />
         <Route path='*' element={<NotFound />} />
-        <Route path="/" element={<Home />}/>
+        <Route path='/' element={<Home />}/>
       </Routes>
     </BrowserRouter>
     </Paper>
