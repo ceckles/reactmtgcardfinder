@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import {Image, Button, Modal, } from "@mantine/core";
+import { useState } from "react";
+import {Image, Button, Modal, Group } from "@mantine/core";
 import "../../css/mana-cost.css";
 import { ConvertMana } from "../res/func/ConvertManaFunc";
+import {Link} from 'react-router-dom';
 
 const Card = ({ card }) => {
   console.log(card);
@@ -38,20 +39,18 @@ const Card = ({ card }) => {
         {
           <div>
             <p>{card.name}</p>
-            <p>
+              <Group spacing={"xs"}>
               coast:
               {manaImg.map((mana) => {
                 return <span className={mana} />;
               })}
-            </p>
+              </Group>
             <Image src={card.image_uris.png} />
-            <Button
-              variant="gradient"
-              gradient={{ from: "orange", to: "red" }}
-              onClick={() => window.open(`${card.name}`)}
-            >
-              Orange red
-            </Button>
+            <Group spacing={"xs"} grow>
+            <Link to={"/detail/"+card.id}>
+            <Button compact variant="gradient" gradient={{ from: "orange", to: "red" }}>Details</Button></Link>
+            <Button compact variant="gradient" gradient={{ from: 'teal', to: 'lime', deg: 105 }} onClick={() => window.open(`${card.purchase_uris.tcgplayer}`)}>Buy from TCG Player {"$"+card.prices.usd}</Button>
+            </Group>
           </div>
         }
       </Modal>
