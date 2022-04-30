@@ -63,5 +63,5 @@ Please make sure to update tests as appropriate.
 [![My Skills](https://skillicons.dev/icons?i=bash,bootstrap,cs,css,deno,docker,express,git,html,java,js,jenkins,linux,materialui,mongodb,nodejs,react,swift,ts,vscode)](https://skillicons.dev)
 
 ## Special thanks:
-    -- [Micku](https://github.com/micku/mana-cost) for the Mana ManaImages and CSS
-    -- [Scryfall](https://scryfall.com/docs/api) for Card Query API
+    [Micku](https://github.com/micku/mana-cost) for the Mana ManaImages and CSS
+    [Scryfall](https://scryfall.com/docs/api) for Card Query API
