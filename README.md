@@ -1,6 +1,3 @@
-[![Lint Code Base](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/super-linter.yml/badge.svg)](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/super-linter.yml)
-[![CodeQL](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/codeql-analysis.yml)
-
 # MTG Card Finder
 
 a remake of my vanila JS app that searches for Magic Cards and displays a list of card and details for the card. as well as links to purchase the card from vendors.
