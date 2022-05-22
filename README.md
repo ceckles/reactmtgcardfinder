@@ -1,6 +1,3 @@
-[![Lint Code Base](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/super-linter.yml/badge.svg)](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/super-linter.yml)
-[![CodeQL](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/codeql-analysis.yml)
-
 # MTG Card Finder
 
 a remake of my vanila JS app that searches for Magic Cards and displays a list of card and details for the card. as well as links to purchase the card from vendors.
@@ -66,5 +63,5 @@ Please make sure to update tests as appropriate.
 [![My Skills](https://skillicons.dev/icons?i=bash,bootstrap,cs,css,deno,docker,express,git,html,java,js,jenkins,linux,materialui,mongodb,nodejs,react,swift,ts,vscode)](https://skillicons.dev)
 
 ## Special thanks:
-    -- [Micku](https://github.com/micku/mana-cost) for the Mana ManaImages and CSS
-    -- [Scryfall](https://scryfall.com/docs/api) for Card Query API
+   [Micku](https://github.com/micku/mana-cost) for the Mana ManaImages and CSS. 
+   [Scryfall](https://scryfall.com/docs/api) for Card Query API
