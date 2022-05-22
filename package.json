@@ -1,19 +1,67 @@
 {
   "name": "mtgcardfinder",
-  "version": "1.0.0",
-  "description": "[![Lint Code Base](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/super-linter.yml/badge.svg)](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/super-linter.yml) [![CodeQL](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/codeql-analysis.yml)",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "main": "server/src/index.js",
+  "dependencies": {
+    "@mantine/core": "^4.2.1",
+    "@mantine/dropzone": "^4.2.1",
+    "@mantine/form": "^4.2.1",
+    "@mantine/hooks": "^4.2.1",
+    "@mantine/modals": "^4.2.1",
+    "@mantine/notifications": "^4.2.1",
+    "@mantine/prism": "^4.2.1",
+    "@mantine/rte": "^4.2.1",
+    "@mantine/spotlight": "^4.2.1",
+    "@radix-ui/react-icons": "^1.1.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^14.1.1",
+    "apollo-server-express": "^3.6.7",
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "framer-motion": "^6.3.3",
+    "graphql": "^16.4.0",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.2",
+    "node-color-log": "^9.0.0",
+    "nodemon": "^2.0.16",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "ts-node": "^10.7.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
   "scripts": {
-    "start client": "cd client && react-scripts start"
+    "start": "react-scripts start",
+    "start server": "nodemon server/src/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ceckles/reactmtgcardfinder.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ceckles/reactmtgcardfinder/issues"
-  },
-  "homepage": "https://github.com/ceckles/reactmtgcardfinder#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
