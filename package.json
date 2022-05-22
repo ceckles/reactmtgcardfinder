@@ -1,50 +1,19 @@
 {
   "name": "mtgcardfinder",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@mantine/core": "^4.2.1",
-    "@mantine/dropzone": "^4.2.1",
-    "@mantine/form": "^4.2.1",
-    "@mantine/hooks": "^4.2.1",
-    "@mantine/modals": "^4.2.1",
-    "@mantine/notifications": "^4.2.1",
-    "@mantine/prism": "^4.2.1",
-    "@mantine/rte": "^4.2.1",
-    "@mantine/spotlight": "^4.2.1",
-    "@radix-ui/react-icons": "^1.1.0",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^14.1.1",
-    "axios": "^0.27.2",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "[![Lint Code Base](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/super-linter.yml/badge.svg)](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/super-linter.yml) [![CodeQL](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ceckles/reactmtgcardfinder/actions/workflows/codeql-analysis.yml)",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start client": "cd client && react-scripts start"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceckles/reactmtgcardfinder.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ceckles/reactmtgcardfinder/issues"
+  },
+  "homepage": "https://github.com/ceckles/reactmtgcardfinder#readme"
 }
