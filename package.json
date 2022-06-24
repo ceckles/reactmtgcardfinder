@@ -41,7 +41,7 @@
     "babel-preset-stage-0": "^6.24.1"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \" cd server && npm run start:dev\"",
+    "start": "concurrently \"react-scripts start\" \" cd server && yarn install && npm run start:dev\"",
     "start:Front": "react-scripts start",
     "start:Server": "cd server && npm run start:dev",
     "build": "react-scripts build",
