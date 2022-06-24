@@ -19,6 +19,7 @@
     "@testing-library/user-event": "^14.1.1",
     "apollo-server-express": "^3.6.7",
     "axios": "^0.27.2",
+    "concurrently": "^7.2.2",
     "express": "^4.18.1",
     "framer-motion": "^6.3.3",
     "graphql": "^16.4.0",
@@ -40,8 +41,9 @@
     "babel-preset-stage-0": "^6.24.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start server": "nodemon server/src/index.js",
+    "start": "concurrently \"react-scripts start\" \" cd server && npm run start:dev\"",
+    "start:Front": "react-scripts start",
+    "start:Server": "cd server && npm run start:dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
