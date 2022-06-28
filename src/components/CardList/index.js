@@ -10,12 +10,12 @@ const CardList = ({cardList}) => {
         {
             cardList.map(card =>{
                 return(
-                <motion.div
+                <motion.div key={cardList.indexOf(card)+1}
                     animate={{scale: 1}}
                     transition={{ delay:2, type:"tween", duration: 0.55}}
                     initial={{scale: 0}}
                 >
-                <Card card={card}/>
+                <Card card={card} key={cardList.indexOf(card)}/>
                 </motion.div>)
             })
         }

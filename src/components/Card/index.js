@@ -36,11 +36,11 @@ const Card = ({ card }) => {
     <>
       <Modal opened={opened} onClose={() => setOpened(false)} title={card.name}>
         {
-          <div>
+          <div key={card.name}>
               <Group spacing={"xs"}>
               coast:
               {manaImg.map((mana) => {
-                return <span className={mana} />;
+                return <span className={mana} key={mana+card.name} />;
               })}
               </Group>
             <Image src={card.image_uris.png} />

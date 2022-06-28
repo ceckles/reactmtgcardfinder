@@ -18,19 +18,31 @@ const Home =() => {
       }),
     });
 
-    function GetCards (name){
-      //Fetch Card from DB and set response in state array
-      console.log("Card name searching:",name);
-      axios.get('https://api.scryfall.com/cards/search?q=%22' + name + '%22')
-        .then(response => {
-          const lst = response.data.data;
-          //console.log(lst);
-          setCardList(lst);
-          //console.log(cardList.length);
-          //console.log(cardList[0].artist)
-        }, error =>{
-          console.log("Error Fetching Card Data:", error);
-        });
+    function GetCards(name) {
+      try {
+        //Fetch Card from DB and set response in state array
+        console.log("Card name searching:", name);
+        axios
+          .get("https://api.scryfall.com/cards/search?q=%22" + name + "%22")
+          .then(
+            (response) => {
+              if(response != null){
+              const lst = response.data.data;
+              console.log(lst);
+              setCardList(lst);
+              //console.log(cardList.length);
+              //console.log(cardList[0].artist)
+              }else{
+                //return nothing for now.
+              }
+            },
+            (error) => {
+              console.log("Error Fetching Card Data:", error);
+            }
+          );
+      } catch (e) {
+        console.log(e);
+      }
     }
 
   
