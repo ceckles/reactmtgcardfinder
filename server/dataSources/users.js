@@ -1,15 +1,15 @@
 import { MongoDataSource } from 'apollo-datasource-mongodb'
 
 export default class Decks extends MongoDataSource {
-  async getDecks() {
+  async getUsers() {
     return await this.model.find();
   }
 
-  async getDeck(id) {
+  async getUser(id) {
     return await this.findOneById(id);
   }
 
-  async createDeck({ title}) {
-    return await this.model.create({ title });
+  async createUser({ firstName }) {
+    return await this.model.create({ firstName });
   }
 }

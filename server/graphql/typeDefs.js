@@ -8,6 +8,11 @@ export const typeDefs = gql`
     year: Int!
   }
 
+  type User {
+    _id: ID!
+    firstName: String!
+  }
+
   type Card {
     _id: ID!
     title: String!
@@ -16,6 +21,10 @@ export const typeDefs = gql`
     imageURL: String!
   }
 
+  type Deck {
+    _id: ID!
+    title: String!
+  }
 
   type Query {
     getMovies: [Movie!]!
@@ -29,5 +38,7 @@ export const typeDefs = gql`
   type Mutation {
     createMovie(title: String!, rating: Float!, year: Int!): Movie!
     createCard(title: String!, rating: Float!, linkURL: String!, imageURL:String!): Card!
+    createDeck(title: String!): Deck!
+    createUser(firstName: String!): User!
   }
 `;

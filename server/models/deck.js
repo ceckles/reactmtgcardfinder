@@ -1,8 +1,5 @@
 import mongoose from "mongoose";
-import Card from './card';
+const { Schema } = mongoose;
 
-export const Deck = mongoose.model("Deck", {
-  title: String,
-  commander: Card,
-  cards: [Card],
-});
+const DeckSchema = new Schema({ title: String }, { timestamps: true });
+export const Deck = mongoose.model("Deck", DeckSchema);

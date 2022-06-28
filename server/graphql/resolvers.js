@@ -14,6 +14,7 @@ export const resolvers = {
       return cards.getCard(id);
     },
   },
+  
   Mutation: {
     createMovie: async (_, args, { dataSources: { movies } }) => {
       return movies.createMovie(args)
@@ -21,5 +22,11 @@ export const resolvers = {
     createCard: async (_, args, { dataSources: { cards } }) => {
       return cards.createCard(args)
     },
+    createDeck: async (_, args, { dataSources: { decks } }) => {
+      return decks.createDeck(args)
+    },
+    createUser: async (_, args, { dataSources: { users } }) => {
+      return users.createUser(args)
+    }
   }
 }
