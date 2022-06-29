@@ -4,12 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {HashRouter} from 'react-router-dom';
+import { Auth0Provider } from "@auth0/auth0-react";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  <Auth0Provider
+  domain="dev-0wf766ai.us.auth0.com"
+  clientId="eZH7PO925eNW7aipFWjKkqG6fq3OUfui"
+  redirectUri={window.location.origin}
+  >
     <App />
+  </Auth0Provider>  
   </React.StrictMode>
 );
 

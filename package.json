@@ -4,6 +4,7 @@
   "private": true,
   "main": "server/src/index.js",
   "dependencies": {
+    "@auth0/auth0-react": "^1.10.2",
     "@mantine/core": "^4.2.1",
     "@mantine/dropzone": "^4.2.1",
     "@mantine/form": "^4.2.1",

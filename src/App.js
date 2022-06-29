@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route, useParams} from "react-router-dom";
 import { ColorSchemeProvider, MantineProvider, Paper, Space } from "@mantine/core";
 import { useHotkeys, useLocalStorageValue } from "@mantine/hooks";
 import LightAndDarkModeButton from "./components/LightAndDarkModeButton";
+import LoginButton from "./components/LoginButtons/login";
+import LogoutButton from "./components/LoginButtons/logout";
+import Profile from "./components/ProfileInfo";
 
 function App() {
   const [colorScheme, setColorScheme] = useLocalStorageValue({
@@ -24,6 +27,9 @@ function App() {
     <div className="mr-1">
     <Space h="xs" />
     <LightAndDarkModeButton />
+    <LoginButton/>
+    <LogoutButton/>
+    <Profile/>
     </div>
     <BrowserRouter>
       <Routes>

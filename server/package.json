@@ -12,6 +12,7 @@
   "dependencies": {
     "apollo-datasource-mongodb": "^0.5.4",
     "apollo-server": "^3.9.0",
+    "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "graphql": "^15.8.0",
     "mongoose": "^6.4.0",

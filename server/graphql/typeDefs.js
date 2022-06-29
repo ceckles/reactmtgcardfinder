@@ -11,6 +11,10 @@ export const typeDefs = gql`
   type User {
     _id: ID!
     firstName: String!
+    lastName: String!
+    userName: String!
+    email: String!
+    passWord: String!
   }
 
   type Card {
@@ -39,6 +43,6 @@ export const typeDefs = gql`
     createMovie(title: String!, rating: Float!, year: Int!): Movie!
     createCard(title: String!, rating: Float!, linkURL: String!, imageURL:String!): Card!
     createDeck(title: String!): Deck!
-    createUser(firstName: String!): User!
+    createUser(firstName: String!, lastName: String!, userName: String!, email: String!, passWord: String!): User!
   }
 `;
