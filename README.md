@@ -18,7 +18,6 @@ The project uses react hooks: useEffects useState and functional componets to di
 <img align="left" alt="Terminal light" width="26px" src="https://github.com/codeSTACKr/codeSTACKr/raw/master/img/terminal-light.svg#gh-light-mode-only" />
 <img align="left" alt="Terminal dark" width="26px" src="https://github.com/codeSTACKr/codeSTACKr/raw/master/img/terminal-dark.svg#gh-dark-mode-only" />
 <br />
-[DevIcons](https://devicon.dev/)
 <br />
 
 ## Installation
@@ -68,5 +67,6 @@ Please make sure to update tests as appropriate.
 
 ## Special thanks:
 
-[Micku](https://github.com/micku/mana-cost) for the Mana ManaImages and CSS.
-[Scryfall](https://scryfall.com/docs/api) for Card Query API
+[Micku](https://github.com/micku/mana-cost) for the Mana ManaImages and CSS.<br/>
+[Scryfall](https://scryfall.com/docs/api) for Card Query API<br/>
+[DevIcons](https://devicon.dev/) for tech icons
