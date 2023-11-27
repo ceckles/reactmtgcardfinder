@@ -7,7 +7,7 @@ The project uses react hooks: useEffects useState and functional componets to di
 ## Languages and Tools for Project
 
 <img align="left" alt="VS Code" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" style="padding-right:10px;"/>
-<img align="left" alt="HTML5" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devion/icons/html5/html5-original.svg" style="padding-right:10px;" />
+ <img align="left" alt="HTML5" width="26px"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="padding-right:10px;"/>
 <img align="left" alt="CSS3" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style="padding-right:10px;" />
 <img align="left" alt="JS" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="padding-right:10px;" />
 <img align="left" alt="React" width="26px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" style="padding-right:10px;" />
@@ -17,13 +17,13 @@ The project uses react hooks: useEffects useState and functional componets to di
 <img align="left" alt="GitHub light" width="26px" src="https://user-images.githubusercontent.com/3369400/139448065-39a229ba-4b06-434b-bc67-616e2ed80c8f.png#gh-light-mode-only" style="padding-right:10px;" />
 <img align="left" alt="Terminal light" width="26px" src="https://github.com/codeSTACKr/codeSTACKr/raw/master/img/terminal-light.svg#gh-light-mode-only" />
 <img align="left" alt="Terminal dark" width="26px" src="https://github.com/codeSTACKr/codeSTACKr/raw/master/img/terminal-dark.svg#gh-dark-mode-only" />
-
 <br />
+[DevIcons](https://devicon.dev/)
 <br />
 
 ## Installation
 
-Use the yarn/npm package manager [yarn](https://yarnpkg.com/getting-started) [npm](https://www.npmjs.com/)to install needed packages.
+Use the yarn/npm package manager [yarn](https://yarnpkg.com/getting-started) or [npm](https://www.npmjs.com/)to install needed packages.
 
 ```bash
 yarn install
@@ -36,13 +36,14 @@ npm install
 yarn run dev
 npm run dev
 ```
+
 ```Browser
 localhost:5173
 ```
 
 ## Link to Demo
 
-[Demo Link](https://reactmtgcardfinder-pg9ofrisf-ceckles.vercel.app/
+[Demo](https://reactmtgcardfinder-pg9ofrisf-ceckles.vercel.app/)
 
 ## Contributing
 
@@ -55,14 +56,17 @@ Please make sure to update tests as appropriate.
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## My GitHub Stats
+
 <details>
   <summary>:zap: GitHub Stats</summary>
   <img align="left" alt="ceckles' GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=ceckles&show_icons=true&hide_border=false&theme=slateorange" />
   </details><br/></br><br/><br/><br/><br/><br/>
 
 ## My Skills
+
 [![My Skills](https://skillicons.dev/icons?i=bash,bootstrap,cs,css,deno,docker,express,git,html,java,js,jenkins,linux,materialui,mongodb,nodejs,react,swift,ts,vscode)](https://skillicons.dev)
 
 ## Special thanks:
-   [Micku](https://github.com/micku/mana-cost) for the Mana ManaImages and CSS. 
-   [Scryfall](https://scryfall.com/docs/api) for Card Query API
+
+[Micku](https://github.com/micku/mana-cost) for the Mana ManaImages and CSS.
+[Scryfall](https://scryfall.com/docs/api) for Card Query API
