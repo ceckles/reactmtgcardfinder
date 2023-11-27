@@ -27,10 +27,10 @@ const CardList = ({ cards }) => {
           <h3 className="text-xl font-bold text-center">{card.name}</h3>
           {card.image_uris && card.image_uris.small ? (
             <img
-              src={card.image_uris.small}
-              alt={card.name}
-              className="w-[300px] h-[400px] object-cover mt-2"
-            />
+            src={card.image_uris.large}
+            alt={card.name}
+            className="w-full h-auto mb-4 rounded-2xl"
+          />
           ) : (
             <p className="text-red-500 mt-2">Image not available</p>
           )}
