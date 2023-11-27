@@ -23,7 +23,7 @@ The project uses react hooks: useEffects useState and functional componets to di
 
 ## Installation
 
-Use the yarn/npm package manager [yarn](https://yarnpkg.com/getting-started) or [npm](https://www.npmjs.com/)to install needed packages.
+Use the yarn/npm package manager [yarn](https://yarnpkg.com/getting-started) or [npm](https://www.npmjs.com/) to install needed packages.
 
 ```bash
 yarn install
