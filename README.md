@@ -42,7 +42,7 @@ localhost:5173
 
 ## Link to Demo
 
-[Demo](https://reactmtgcardfinder-pg9ofrisf-ceckles.vercel.app/)
+[Demo](https://reactmtgcardfinder.vercel.app/)
 
 ## Contributing
 
